@@ -1,0 +1,5 @@
+net\mooctest\NaiveBayesClassifier.class
+net\mooctest\NaiveBayesClassifier$1.class
+net\mooctest\Classifier.class
+net\mooctest\IFeatureProbability.class
+net\mooctest\Classification.class

@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<coverage
+        xmlns='http://java.sun.com/jcov/namespace'
+        xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xsi:schemaLocation='http://java.sun.com/jcov/namespace coverage.xsd'>
+
+	<head>
+		<property name='coverage.generator.args' val=''/>
+		<property name='coverage.generator.mode' val='BRANCH'/>
+		<property name='coverage.generator.internal' val='include'/>
+		<property name='coverage.generator.include' val=''/>
+		<property name='coverage.generator.exclude' val=''/>
+		<property name='coverage.generator.caller_include' val='.*'/>
+		<property name='coverage.generator.caller_exclude' val=''/>
+		<property name='coverage.created.date' val='2019-04-28'/>
+		<property name='coverage.created.time' val='06:58:11'/>
+		<property name='coverage.generator.fullversion' val='3.0os.beta-2 built: 10 March 2018'/>
+		<property name='coverage.generator.name' val='jcov'/>
+		<property name='coverage.generator.version' val='3.0'/>
+		<property name='coverage.spec.version' val='1.3'/>
+		<property name='java.runtime.version' val='1.8.0_201-b09'/>
+		<property name='java.version' val='1.8.0_201'/>
+		<property name='os.arch' val='amd64'/>
+		<property name='os.name' val='Windows 10'/>
+		<property name='os.version' val='10.0'/>
+		<property name='user.name' val='Administrator'/>
+		<property name='dynamic.collected' val='false'/>
+		<property name='id.count' val='122'/>
+	</head>
+	<package name="net.mooctest" moduleName="no_module">
+		<class name="Classification" supername="java/lang/Object" checksum="2152234380" signature="&lt;T:Ljava/lang/Object;K:Ljava/lang/Object;&gt;Ljava/lang/Object;" source="Classification.java" flags=' public'>
+			<meth name="&lt;init&gt;" vmsig="(Ljava/util/Collection;Ljava/lang/Object;)V" flags=' public' access="1" cons="true" signature="(Ljava/util/Collection&lt;TT;&gt;;TK;)V" length="8">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="0" count="18"/>
+					<exit s="7" e="7" opcode="return"/>
+				</bl>
+				<lt>0=14;7=15;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Ljava/util/Collection;Ljava/lang/Object;F)V" flags=' public' access="1" cons="true" signature="(Ljava/util/Collection&lt;TT;&gt;;TK;F)V" length="20">
+				<bl s="0" e="19">
+					<methenter s="0" e="19" id="1" count="36"/>
+					<exit s="19" e="19" opcode="return"/>
+				</bl>
+				<lt>0=18;4=19;9=20;14=21;19=22;</lt>
+			</meth>
+			<meth name="getFeatureset" vmsig="()Ljava/util/Collection;" flags=' public' access="1" signature="()Ljava/util/Collection&lt;TT;&gt;;" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="2" count="22"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=25;</lt>
+			</meth>
+			<meth name="getProbability" vmsig="()F" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="3" count="32"/>
+					<exit s="4" e="4" opcode="freturn"/>
+				</bl>
+				<lt>0=29;</lt>
+			</meth>
+			<meth name="getCategory" vmsig="()Ljava/lang/Object;" flags=' public' access="1" signature="()TK;" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="4" count="50"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=33;</lt>
+			</meth>
+			<meth name="toString" vmsig="()Ljava/lang/String;" flags=' public' access="1" length="52">
+				<bl s="0" e="51">
+					<methenter s="0" e="51" id="5" count="2"/>
+					<exit s="51" e="51" opcode="areturn"/>
+				</bl>
+				<lt>0=38;</lt>
+			</meth>
+		</class>
+		<class name="NaiveBayesClassifier" supername="net/mooctest/Classifier" checksum="2159595919" signature="&lt;T:Ljava/lang/Object;K:Ljava/lang/Object;&gt;Lnet/mooctest/Classifier&lt;TT;TK;&gt;;" source="NaiveBayesClassifier.java" flags=' public'>
+			<meth name="&lt;init&gt;" vmsig="()V" flags=' public' access="1" cons="true" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="106" count="60"/>
+					<exit s="4" e="4" opcode="return"/>
+				</bl>
+				<lt>0=8;</lt>
+			</meth>
+			<meth name="featuresProbabilityProduct" vmsig="(Ljava/util/Collection;Ljava/lang/Object;)F" flags=' private' access="2" signature="(Ljava/util/Collection&lt;TT;&gt;;TK;)F" length="44">
+				<bl s="0" e="9">
+					<methenter s="0" e="9" id="107" count="10"/>
+				</bl>
+				<bl s="10" e="19">
+					<fall s="10" e="19" id="111" count="10"/>
+					<br s="17" e="19">
+						<cond s="42" e="43" id="108" count="10" val="true"/>
+						<cond s="20" e="41" id="109" count="4" val="false"/>
+					</br>
+				</bl>
+				<bl s="20" e="41">
+					<goto s="39" e="41">
+						<tg s="10" e="19" id="110" count="4"/>
+					</goto>
+				</bl>
+				<bl s="42" e="43">
+					<exit s="43" e="43" opcode="freturn"/>
+				</bl>
+				<lt>0=12;2=13;29=14;42=15;</lt>
+			</meth>
+			<meth name="categoryProbability" vmsig="(Ljava/util/Collection;Ljava/lang/Object;)F" flags=' private' access="2" signature="(Ljava/util/Collection&lt;TT;&gt;;TK;)F" length="20">
+				<bl s="0" e="19">
+					<methenter s="0" e="19" id="112" count="10"/>
+					<exit s="19" e="19" opcode="freturn"/>
+				</bl>
+				<lt>0=19;7=20;15=21;19=19;</lt>
+			</meth>
+			<meth name="categoryProbabilities" vmsig="(Ljava/util/Collection;)Ljava/util/SortedSet;" flags=' private' access="2" signature="(Ljava/util/Collection&lt;TT;&gt;;)Ljava/util/SortedSet&lt;Lnet/mooctest/Classification&lt;TT;TK;&gt;;&gt;;" length="72">
+				<bl s="0" e="25">
+					<methenter s="0" e="25" id="113" count="12"/>
+				</bl>
+				<bl s="26" e="34">
+					<fall s="26" e="34" id="117" count="12"/>
+					<br s="32" e="34">
+						<cond s="70" e="71" id="114" count="12" val="true"/>
+						<cond s="35" e="69" id="115" count="10" val="false"/>
+					</br>
+				</bl>
+				<bl s="35" e="69">
+					<goto s="67" e="69">
+						<tg s="26" e="34" id="116" count="10"/>
+					</goto>
+				</bl>
+				<bl s="70" e="71">
+					<exit s="71" e="71" opcode="areturn"/>
+				</bl>
+				<lt>0=27;16=42;43=43;55=45;61=43;70=46;</lt>
+			</meth>
+			<meth name="classify" vmsig="(Ljava/util/Collection;)Lnet/mooctest/Classification;" flags=' public' access="1" signature="(Ljava/util/Collection&lt;TT;&gt;;)Lnet/mooctest/Classification&lt;TT;TK;&gt;;" length="27">
+				<bl s="0" e="14">
+					<methenter s="0" e="14" id="118" count="8"/>
+					<br s="12" e="14">
+						<cond s="25" e="26" id="119" count="3" val="true"/>
+						<cond s="15" e="24" id="120" count="5" val="false"/>
+					</br>
+				</bl>
+				<bl s="15" e="24">
+					<exit s="24" e="24" opcode="areturn"/>
+				</bl>
+				<bl s="25" e="26">
+					<exit s="26" e="26" opcode="areturn"/>
+				</bl>
+				<lt>0=51;2=52;6=54;15=55;25=57;</lt>
+			</meth>
+			<meth name="classifyDetailed" vmsig="(Ljava/util/Collection;)Ljava/util/Collection;" flags=' public' access="1" signature="(Ljava/util/Collection&lt;TT;&gt;;)Ljava/util/Collection&lt;Lnet/mooctest/Classification&lt;TT;TK;&gt;;&gt;;" length="6">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="121" count="4"/>
+					<exit s="5" e="5" opcode="areturn"/>
+				</bl>
+				<lt>0=62;</lt>
+			</meth>
+		</class>
+		<class name="NaiveBayesClassifier$1" supername="java/lang/Object" checksum="2244311933" signature="Ljava/lang/Object;Ljava/util/Comparator&lt;Lnet/mooctest/Classification&lt;TT;TK;&gt;;&gt;;" source="NaiveBayesClassifier.java" inner="anon" flags=''>
+			<meth name="&lt;init&gt;" vmsig="(Lnet/mooctest/NaiveBayesClassifier;)V" flags='' access="0" cons="true" length="10">
+				<bl s="0" e="9">
+					<methenter s="0" e="9" id="98" count="12"/>
+					<exit s="9" e="9" opcode="return"/>
+				</bl>
+				<lt>0=29;</lt>
+			</meth>
+			<meth name="compare" vmsig="(Lnet/mooctest/Classification;Lnet/mooctest/Classification;)I" flags=' public' access="1" signature="(Lnet/mooctest/Classification&lt;TT;TK;&gt;;Lnet/mooctest/Classification&lt;TT;TK;&gt;;)I" length="34">
+				<bl s="0" e="15">
+					<methenter s="0" e="15" id="99" count="10"/>
+					<br s="13" e="15">
+						<cond s="32" e="33" id="100" count="2" val="true"/>
+						<cond s="16" e="29" id="101" count="8" val="false"/>
+					</br>
+				</bl>
+				<bl s="16" e="29">
+					<br s="27" e="29">
+						<cond s="32" e="33" id="102" count="7" val="true"/>
+						<cond s="30" e="31" id="103" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="30" e="31">
+				</bl>
+				<bl s="32" e="33">
+					<fall s="32" e="33" id="104" count="1"/>
+					<exit s="33" e="33" opcode="ireturn"/>
+				</bl>
+				<lt>0=33;1=34;8=33;12=35;17=36;30=37;32=38;</lt>
+			</meth>
+			<meth name="compare" vmsig="(Ljava/lang/Object;Ljava/lang/Object;)I" flags=' public bridge synthetic' access="4161" length="13">
+				<bl s="0" e="12">
+					<methenter s="0" e="12" id="105" count="10"/>
+					<exit s="12" e="12" opcode="ireturn"/>
+				</bl>
+				<lt>0=29;</lt>
+			</meth>
+		</class>
+	</package>
+</coverage>
